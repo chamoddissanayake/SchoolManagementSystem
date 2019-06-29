@@ -14,7 +14,7 @@
 	<% Admin currentUserObj =(Admin)session.getAttribute("sessionUsr");%>
 	 Welcome <%=currentUserObj.getaID() %>
 	 
-	 <a href="/SchoolManagementSystem/logOut.jsp">LogOut</a>
+	 <a href="/schoolmanagement/logOut.jsp">LogOut</a>
 
 </body>
 </html>

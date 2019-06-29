@@ -14,7 +14,7 @@
 	<% Parent currentUserObj =(Parent)session.getAttribute("sessionUsr");%>
 	 Welcome <%=currentUserObj.getPid() %>
 	 
-	 <a href="/SchoolManagementSystem/logOut.jsp">LogOut</a>
+	 <a href="/schoolmanagement/logOut.jsp">LogOut</a>
 	 
 
 </body>

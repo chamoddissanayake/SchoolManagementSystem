@@ -68,7 +68,7 @@ public class LoginHandlerServlet extends HttpServlet {
 							trackLogin(stdObj);
 							HttpSession session = request.getSession();
 							session.setAttribute("sessionUsr", stdObj);
-							response.sendRedirect("/SchoolManagementSystem/studentDashboard.jsp");
+							response.sendRedirect("/schoolmanagement/studentDashboard.jsp");
 							return;
 				        }else {
 				        	request.setAttribute("stdUser", stdObj);
@@ -113,7 +113,7 @@ public class LoginHandlerServlet extends HttpServlet {
 							trackLogin(adstf);
 							HttpSession session = request.getSession();
 							session.setAttribute("sessionUsr", adstf);
-							response.sendRedirect("/SchoolManagementSystem/administrativeStaffDashboard.jsp");
+							response.sendRedirect("/schoolmanagement/administrativeStaffDashboard.jsp");
 							return;
 				        }else {
 				        	request.setAttribute("adstfUser", adstf);
@@ -157,7 +157,7 @@ public class LoginHandlerServlet extends HttpServlet {
 							trackLogin(acdstf);
 							HttpSession session = request.getSession();
 							session.setAttribute("sessionUsr", acdstf);
-							response.sendRedirect("/SchoolManagementSystem/academicStaffDashboard.jsp");
+							response.sendRedirect("/schoolmanagement/academicStaffDashboard.jsp");
 							return;
 				        }else {
 				        	request.setAttribute("acdstfUser", acdstf);
@@ -198,7 +198,7 @@ public class LoginHandlerServlet extends HttpServlet {
 							trackLogin(admin);
 							HttpSession session = request.getSession();
 							session.setAttribute("sessionUsr", admin);
-							response.sendRedirect("/SchoolManagementSystem/adminDashboard.jsp");
+							response.sendRedirect("/schoolmanagement/adminDashboard.jsp");
 							return;
 				        }else {
 				        	request.setAttribute("adminUser", admin);
@@ -240,7 +240,7 @@ public class LoginHandlerServlet extends HttpServlet {
 							trackLogin(prn);
 							HttpSession session = request.getSession();
 							session.setAttribute("sessionUsr", prn);
-							response.sendRedirect("/SchoolManagementSystem/parentDashboard.jsp");
+							response.sendRedirect("/schoolmanagement/parentDashboard.jsp");
 							return;
 				        }else {
 				        	request.setAttribute("prnUser", prn);
@@ -281,7 +281,7 @@ public class LoginHandlerServlet extends HttpServlet {
 							trackLogin(obm);
 							HttpSession session = request.getSession();
 							session.setAttribute("sessionUsr", obm);
-							response.sendRedirect("/SchoolManagementSystem/obDashboard.jsp");
+							response.sendRedirect("/schoolmanagement/obDashboard.jsp");
 							return;
 				        }else {
 				        	request.setAttribute("obUser", obm);

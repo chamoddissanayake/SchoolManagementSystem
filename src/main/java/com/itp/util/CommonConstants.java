@@ -5,7 +5,7 @@ public class CommonConstants {
 	public static final String QUERY_XML = "queryFilePath";
 	
 	/** Constant for file path of config.properties */
-	public static final String PROPERTY_FILE = "config.properties";
+	public static final String PROPERTY_FILE = "/config.properties";
 
 	/** Constant for URL key of MySQL database in config.properties */
 	public static final String URL = "url";

@@ -30,7 +30,7 @@ public class QueryUtil extends CommonUtil{
 				 * Read the Query.xml file and read each query node into node
 				 * list. It refers tag name query
 				 */
-				nodeList = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(QueryUtil.class.getResourceAsStream("Query.xml"))
+				nodeList = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(QueryUtil.class.getResourceAsStream("/Query.xml"))
 							.getElementsByTagName(CommonConstants.TAG_NAME);
 				
 			} catch (SAXException | IOException |ParserConfigurationException  e) {

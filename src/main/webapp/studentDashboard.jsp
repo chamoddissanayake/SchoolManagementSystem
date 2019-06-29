@@ -13,7 +13,7 @@
 	<% Student currentUserObj =(Student)session.getAttribute("sessionUsr");%>
 	 Welcome <%=currentUserObj.getsId() %>
 	 
-	 <a href="/SchoolManagementSystem/logOut.jsp">LogOut</a>
+	 <a href="/schoolmanagement/logOut.jsp">LogOut</a>
 	 
 	 
 </body>

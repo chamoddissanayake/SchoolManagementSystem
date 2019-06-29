@@ -13,7 +13,7 @@
 	<% AdministrativeStaff currentUserObj =(AdministrativeStaff)session.getAttribute("sessionUsr");%>
 	 Welcome <%=currentUserObj.getStfID() %>
 	 
-	 <a href="/SchoolManagementSystem/logOut.jsp">LogOut</a>
+	 <a href="/schoolmanagement/logOut.jsp">LogOut</a>
 	 
 </body>
 </html>

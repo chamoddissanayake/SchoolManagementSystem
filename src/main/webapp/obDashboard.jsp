@@ -15,7 +15,7 @@
 	<% OBMember currentUserObj =(OBMember)session.getAttribute("sessionUsr");%>
 	 Welcome <%=currentUserObj.getObID() %>
 	 
-	 <a href="/SchoolManagementSystem/logOut.jsp">LogOut</a>
+	 <a href="/schoolmanagement/logOut.jsp">LogOut</a>
 	 
 	 
 </body>
