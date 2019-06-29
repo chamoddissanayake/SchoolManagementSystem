@@ -1,0 +1,47 @@
+	body, html {
+			  height: 100%;
+			  margin: 0;
+			}
+		 	.body1{
+		 		 background-image: url(../media/images/wallpaper.jpg);
+				 /* Full height */
+				  height: 100%; 
+				
+				  /* Center and scale the image nicely */
+				  background-position: center;
+				  background-repeat: no-repeat;
+				  background-size: cover;
+		 	}
+		 	
+			.centerForm {
+			    margin-left:auto; 
+			    margin-right:auto;
+			    
+			    background-image: url("../media/images/formbackground.jpg");
+			    background-size: cover;
+			  } 
+			  .submitButton{
+				  background-color: #4CAF50; 
+				  border: none;
+				  color: white;
+				  padding: 10px 27px;
+				  text-align: center;
+				  text-decoration: none;
+				  display: inline-block;
+				  font-size: 14px;
+				  transition: 0.3s;
+			  }
+			  .submitButton:hover {
+				  background-color: #4CAF50; 
+				  border: none;
+				  color: white;
+				  padding: 13px 30px;
+				  text-align: center;
+				  text-decoration: none;
+				  display: inline-block;
+				  font-size: 14px;
+			  }    
+			  
+			.worongInputMessage{
+				color: red;
+			}
