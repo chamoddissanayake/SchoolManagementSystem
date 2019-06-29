@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Querys>
+	
+	<query id="studentSearchForLogin">
+        <![CDATA[
+        	
+			SELECT *
+			FROM student_passwords
+			WHERE sID = ?;
+        ]]>
+	</query>
+	
+	<query id="administrativeStaffSearchForLogin">
+        <![CDATA[
+        	
+			SELECT *
+			FROM administrative_staff_passwords
+			WHERE stfID = ?;			
+        ]]>
+	</query>
+
+	<query id="academicStaffSearchForLogin">
+        <![CDATA[
+        	
+			SELECT *
+			FROM academic_staff_passwords
+			WHERE stfID = ?;
+        ]]>
+	</query>
+
+	<query id="adminSearchForLogin">
+        <![CDATA[
+        	
+			SELECT *
+			FROM admin_passwords
+			WHERE aID = ?;
+        ]]>
+	</query>		
+
+	<query id="parentSearchForLogin">
+        <![CDATA[
+        	
+			SELECT *
+			FROM parents_passwords
+			WHERE pID = ?;
+        ]]>
+	</query>
+	
+	
+	<query id="obMemberSearchForLogin">
+        <![CDATA[
+        	
+			SELECT *
+			FROM ob_passwords
+			WHERE obID = ?;
+        ]]>
+	</query>
+	
+	<query id="loginTrack">
+        <![CDATA[
+    		
+    		insert into login_track (userType ,description) 
+          	values (?,?)
+    		    	
+        ]]>
+	</query>	
+	
+	
+	<query id="studentEmailCheck">
+        <![CDATA[
+    		
+    		SELECT *
+    		FROM student_email
+    		WHERE sID = ? AND email = ?;
+    		    	
+        ]]>
+	</query>
+	<query id="administrativeStaffEmailCheck">
+        <![CDATA[
+    		
+    		SELECT *
+    		FROM administrative_staff_email
+    		WHERE aID = ? AND email = ?;
+    		    	
+        ]]>
+	</query>	
+	<query id="academicStaffEmailCheck">
+        <![CDATA[
+    		
+    		SELECT *
+    		FROM academic_staff_email
+    		WHERE aID = ? AND email = ?;
+    		    	
+        ]]>
+	</query>
+	<query id="adminEmailCheck">
+        <![CDATA[
+    		
+    		SELECT *
+    		FROM admin_email
+    		WHERE aID = ? AND email = ?;
+    		    	
+        ]]>
+	</query>
+
+	<query id="parentEmailCheck">
+        <![CDATA[
+    		
+    		SELECT *
+    		FROM parent_email
+    		WHERE pID = ? AND email = ?;
+    		    	
+        ]]>
+	</query>	
+
+	<query id="obMemberCheck">
+        <![CDATA[
+    		
+    		SELECT *
+    		FROM obmember_email
+    		WHERE obID = ? AND email = ?;
+    		    	
+        ]]>
+	</query>
+
+
+	<query id="studentUpdatePassword">
+        <![CDATA[
+        
+			UPDATE student_passwords
+			SET password = ?, salt= ?
+			WHERE sID = ?;
+				    	
+        ]]>
+	</query>
+	
+	<query id="administrativeStaffUpdatePassword">
+        <![CDATA[
+        
+			UPDATE administrative_staff_passwords
+			SET password = ?, salt= ?
+			WHERE stfID = ?;
+				    	
+        ]]>
+	</query>
+
+	<query id="academicStaffUpdatePassword">
+        <![CDATA[
+        
+			UPDATE academic_staff_passwords
+			SET password = ?, salt= ?
+			WHERE stfID = ?;
+				    	
+        ]]>
+	</query>
+
+	<query id="adminUpdatePassword">
+        <![CDATA[
+        
+			UPDATE admin_passwords
+			SET password = ?, salt= ?
+			WHERE aID = ?;
+				    	
+        ]]>
+	</query>
+
+	<query id="parentUpdatePassword">
+        <![CDATA[
+        
+			UPDATE parents_passwords
+			SET password = ?, salt= ?
+			WHERE pID = ?;
+				    	
+        ]]>
+	</query>
+	
+		<query id="obMemberUpdatePassword">
+        <![CDATA[
+        
+			UPDATE ob_passwords
+			SET password = ?, salt= ?
+			WHERE obID = ?;
+				    	
+        ]]>
+	</query>
+		
+</Querys>
