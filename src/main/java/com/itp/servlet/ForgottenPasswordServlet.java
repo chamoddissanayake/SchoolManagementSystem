@@ -381,7 +381,7 @@ public class ForgottenPasswordServlet extends HttpServlet {
 		System.out.println("Ready to send message...");
 		
 		String to =  obj.getEmail();
-		final String from =CommonConstants.SCHOOL_EMAIL_ADDRESS;
+		
 		Properties properties = new Properties();
 		
 		properties.put("mail.smtp.auth","true");
@@ -391,14 +391,14 @@ public class ForgottenPasswordServlet extends HttpServlet {
 	
 		Session session = Session.getDefaultInstance(properties, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication(from, CommonConstants.SCHOOL_EMAIL_PASSWORD);
+				return new PasswordAuthentication("asokacollegecolombo10@gmail.com", "itpgroup");
 			}
 		});
 		
 		try {
 			
 			MimeMessage message = new MimeMessage(session);
-			message.setFrom(new InternetAddress(from));
+			message.setFrom(new InternetAddress("asokacollegecolombo10@gmail.com"));
 			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 			message.setSubject("Update Password");
 			message.setText("Dear Administrative Staff,  Please click the following link to update your password.\n\n\n\n"

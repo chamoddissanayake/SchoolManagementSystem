@@ -41,7 +41,7 @@ public class CommonConstants {
 	public static final String QUERY_PARENT_PASSWORD_UPDATE = "parentUpdatePassword";
 	
 	public static final String SCHOOL_EMAIL_ADDRESS = "asokacollegecolombo10@gmail.com";
-	public static final String SCHOOL_EMAIL_PASSWORD= "itpgroup";
+	public static final String SCHOOL_EMAIL_PASSWORD= "itpproject";
 	
 	/** Constant for query tag in Query.xml */
 	public static final String TAG_NAME = "query";
