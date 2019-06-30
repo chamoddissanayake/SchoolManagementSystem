@@ -310,7 +310,11 @@
 			</script>		
 			<% }%>
 		
-		
+		<div style="text-align: center;">
+		<br>
+			<a href="loginWithGoogle.jsp" style="text-decoration: none;">I am a guest.</a>
+		</div>
+                        
 		<div style="text-align: center;">
 		<br>
 			<a href="forgottenPassword.jsp" style="text-decoration: none;">Forgotten my password.</a>

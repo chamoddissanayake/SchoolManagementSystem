@@ -365,7 +365,7 @@ public class ForgottenPasswordServlet extends HttpServlet {
 				message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 				message.setSubject("Update Password");
 				message.setText("Dear Student,  Please click the following link to update your password.\n\n\n\n"
-						+ " http://localhost:8081/schoolmanagement/updatePassword.jsp?type=student&id="+obj.getsId()
+						+ " http://localhost:8080/schoolmanagement/updatePassword.jsp?type=student&id="+obj.getsId()
 						+ "\n\n\n\n\n\n\n\nThis is a system generated message. Do not reply.");
 				
 				properties.put("mail.smtp.starttls.enable", "true");
@@ -402,7 +402,7 @@ public class ForgottenPasswordServlet extends HttpServlet {
 			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 			message.setSubject("Update Password");
 			message.setText("Dear Administrative Staff,  Please click the following link to update your password.\n\n\n\n"
-					+ " http://localhost:8081/schoolmanagement/updatePassword.jsp?type=administrative_staff&id="+obj.getStfID()
+					+ " http://localhost:8080/schoolmanagement/updatePassword.jsp?type=administrative_staff&id="+obj.getStfID()
 					+ "\n\n\n\n\n\n\n\nThis is a system generated message. Do not reply.");
 			
 			properties.put("mail.smtp.starttls.enable", "true");
@@ -442,7 +442,7 @@ public class ForgottenPasswordServlet extends HttpServlet {
 			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 			message.setSubject("Update Password");
 			message.setText("Dear Academic Staff,  Please click the following link to update your password.\n\n\n\n"
-					+ " http://localhost:8081/schoolmanagement/updatePassword.jsp?type=academic_staff&id="+obj.getStfID()
+					+ " http://localhost:8080/schoolmanagement/updatePassword.jsp?type=academic_staff&id="+obj.getStfID()
 					+ "\n\n\n\n\n\n\n\nThis is a system generated message. Do not reply.");
 			
 			properties.put("mail.smtp.starttls.enable", "true");
@@ -480,7 +480,7 @@ public class ForgottenPasswordServlet extends HttpServlet {
 			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 			message.setSubject("Update Password");
 			message.setText("Dear Admin,  Please click the following link to update your password.\n\n\n\n"
-					+ " http://localhost:8081/schoolmanagement/updatePassword.jsp?type=admin&id="+obj.getaID()
+					+ " http://localhost:8080/schoolmanagement/updatePassword.jsp?type=admin&id="+obj.getaID()
 					+ "\n\n\n\n\n\n\n\nThis is a system generated message. Do not reply.");
 			
 			properties.put("mail.smtp.starttls.enable", "true");
@@ -518,7 +518,7 @@ public class ForgottenPasswordServlet extends HttpServlet {
 			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 			message.setSubject("Update Password");
 			message.setText("Dear Parent,  Please click the following link to update your password.\n\n\n\n"
-					+ " http://localhost:8081/schoolmanagement/updatePassword.jsp?type=parent&id="+obj.getPid()
+					+ " http://localhost:8080/schoolmanagement/updatePassword.jsp?type=parent&id="+obj.getPid()
 					+ "\n\n\n\n\n\n\n\nThis is a system generated message. Do not reply.");
 			
 			properties.put("mail.smtp.starttls.enable", "true");
@@ -555,7 +555,7 @@ public class ForgottenPasswordServlet extends HttpServlet {
 			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 			message.setSubject("Update Password");
 			message.setText("Dear OB Member,  Please click the following link to update your password.\n\n\n\n"
-					+ " http://localhost:8081/schoolmanagement/updatePassword.jsp?type=ob_member&id="+obj.getObID()
+					+ " http://localhost:8080/schoolmanagement/updatePassword.jsp?type=ob_member&id="+obj.getObID()
 					+ "\n\n\n\n\n\n\n\nThis is a system generated message. Do not reply.");
 			
 			properties.put("mail.smtp.starttls.enable", "true");

@@ -49,21 +49,71 @@
 		document.getElementById("updateUserIdV").disabled = true;
 	}
 	</script>
+        <link rel="stylesheet" type="text/css" href="stylesheets/general.css">
 	
 </head>
-<body onload="bodyOnLoadFunction()">
-	<p>Update Password</p>
+<body class="body1" onload="bodyOnLoadFunction()">
+    
+        <div style="text-align: center;">
+                <br>
+                <img src="media/images/logo.png"  style ="height: auto;"  >
+        </div>
+    
+	
 	
 	<form action="UpdatePassword" method="post" name="updatePasswordForm"  onsubmit = "return(validate());">
-								<input type="hidden"	id="updateUserType"			name="updateUserType" value="" >				<br>	<!-- invisible  -->
-		Account Type			<input type="text"		id="updateUserTypeV"							  value="" >				<br>	<!-- visible  -->
-								<input type="hidden"	id="updateUserId" 			name="updateUserId" value="">					<br>    <!-- invisible -->
-		User ID:				<input type="text" 		id="updateUserIdV" 								value="">					<br>	<!-- visible -->
-		New password:			<input type="password" 	id="updateUserPassword" 	name="updateUserPassword">						<br>
-		ReEnter new password:	<input type="password" 	id="updateReUserPassword" 	name="updateReUserPassword">					<br>
-		
-		<input type="submit" value="Upadate my password">
-	</form>
+            <fieldset class="centerForm" style=" border:4px groove; border-radius: 10px;width:400px "> 
+                <div style="text-align: center">
+                    <h2>Update Password</h2>
+                </div>
+                
+                <table>
+		<col width="200">
+                <tr>
+                    <td>Your Account Type</td>
+                        <td>
+                                                <input type="text"	id="updateUserTypeV"                                    value="" >	<br>	<!-- visible  -->
+                                                <input type="hidden"	id="updateUserType"		name="updateUserType"   value="" >	<br>	<!-- invisible  -->
+                        </td>
+                </tr>
+                </table>
+                
+                <table>
+		<col width="200">
+                <tr>
+                    <td>Your User ID:</td>
+                        <td>
+                                            <input type="text" 	id="updateUserIdV"                                      value="">	<br>	<!-- visible -->
+                                            <input type="hidden"	id="updateUserId" 		name="updateUserId"     value="">	<br>    <!-- invisible -->
+                        </td>
+                </tr>
+                </table>
+                    
+                <table>
+		<col width="200">
+                <tr>
+                    <td>New password:</td>	
+                        <td>
+                                            <input type="password" 	id="updateUserPassword" 	name="updateUserPassword">		<br><br>
+                        </td>
+                </tr>
+                </table>
+                
+                <table>
+		<col width="200">
+                <tr>
+                    <td>ReEnter new password:</td>	
+                        <td>
+                                            <input type="password" 	id="updateReUserPassword" 	name="updateReUserPassword">            <br><br>
+                        </td>
+                </tr>
+                </table>
+                
+            <div style="text-align: center;">    
+		<input type="submit" value="Upadate my password" class="submitButton">
+            </div>
+            </fieldset>
+        </form>
 	
 
 </body>
